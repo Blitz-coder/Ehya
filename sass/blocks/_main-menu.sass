@@ -1,0 +1,50 @@
+.navbar
+  background-color: $bg-color
+  margin-bottom: 25px
+  &-top
+    padding: 36px 0 36px 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: nowrap
+  // блок меню с кнопкой
+  &__menu
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &-button
+      font-weight: bold
+      font-size: 16px
+      line-height: 22px
+      padding: 12px 22px
+      text-align: center
+      background-color: inherit
+      color: $secondary
+      border: 2px solid $secondary
+      box-sizing: border-box
+      filter: drop-shadow(0px 10px 25px rgba(21, 37, 72, 0.1))
+      border-radius: 8px
+      margin-left: 50px
+      margin-right: 0px
+    &-burger
+      width: 22px
+      margin-right: 24px
+      margin-left: 24px
+    &-mobile
+      display: none
+      max-width: 70px
+  &-menu
+    display: flex
+    justify-content: space-between
+    width: 506px
+    list-style-type: none
+    margin: 0
+    padding: 0
+    &-item
+    &__link
+      text-decoration: none
+      color: $primary
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      text-align: center
