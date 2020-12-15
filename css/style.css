@@ -4,25 +4,25 @@
 
 @font-face {
   font-family: 'HKGrotesk-Regular';
-  src: url("../fonts/HKGrotesk-Regular.woff") format("woff");
   src: url("../fonts/HKGrotesk-Regular.woff2") format("woff2");
+  src: url("../fonts/HKGrotesk-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'HKGrotesk-Medium';
-  src: url("../fonts/HKGrotesk-Medium.woff") format("woff");
   src: url("../fonts/HKGrotesk-Medium.woff2") format("woff2");
-  font-weight: normal;
+  src: url("../fonts/HKGrotesk-Medium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'HKGrotesk-Bold';
-  src: url("../fonts/HKGrotesk-Bold.woff") format("woff");
   src: url("../fonts/HKGrotesk-Bold.woff2") format("woff2");
-  font-weight: normal;
+  src: url("../fonts/HKGrotesk-Bold.woff") format("woff");
+  font-weight: bold;
   font-style: normal;
   font-display: swap; }
 
@@ -488,9 +488,9 @@ template {
 
 .hero-title {
   max-width: 448px;
-  font-family: HKGrotesk-Bold;
-  font-style: normal;
+  font-family: 'HKGrotesk-Bold';
   font-weight: bold;
+  font-style: normal;
   font-size: 56px;
   line-height: 68px;
   letter-spacing: 0.2px;
