@@ -4,11 +4,12 @@
   min-height: 700px
   margin: 0 auto 120px auto
   position: relative
-  padding: 62px 20px 54px 107px
+  padding: 62px 20px 46px 107px
   border-radius: 8px
   overflow: hidden
   background: #E8EAE9
 .hero
+  margin-bottom: 120px
   &-image
     position: absolute
     width: 1074px
@@ -33,18 +34,18 @@
     position: relative
     z-index: 10
     max-width: 652px
-    min-height: 400px
+    height: 592px
     display: flex
     flex-direction: column
-    justify-content: space-between
+    justify-content: space-start
   &__text
     max-height: 400px
     text-align: left
+    margin-bottom: 52px
   &-bage
     display: inline-block
     padding: 6px 16px
     background-color: rgba(54, 179, 126, 0.1)
-    // lighten($bage-color, 45%)
     border-radius: 2000px
     font-style: normal
     font-weight: 600
@@ -72,3 +73,39 @@
     font-size: 20px
     line-height: 36px
     color: inherit
+  &-button
+    width: 259px
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 25px
+    color: $light-color
+    padding: 15px 40px
+    background-color: $primary
+    border-radius: 8px
+    border: none
+    margin-bottom: 48px
+  &__guaranty
+    display: flex
+    width: 464px
+    max-width: 650px
+    justify-content: space-between
+    margin-bottom: -2px
+    &-block
+      display: flex
+      justify-content: space-between
+      align-items: center
+    &-img
+      padding: 7px
+      border: 1px solid rgba(21,101,216, 0.1)
+      border-radius: 12px
+      margin-right: 8px
+    &-link
+      font-family: 'HKGrotesk-Medium'
+      font-style: normal
+      font-weight: 500
+      font-size: 16px
+      line-height: 20px
+      letter-spacing: 0.2px
+      color: #183B56
+      text-decoration: none

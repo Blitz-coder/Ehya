@@ -1,12 +1,332 @@
 @media(min-width: 992px)
-
   button
     &:hover
 
   .navbar
+    &__mobile
+      display: none
     &__menu
       &-button
         transition: 0.5s
         &:hover
           background-color: $secondary
-          color: $bg-color
+          color: $light-color
+  .hero
+    &-button
+      transition: 0.5s
+      &:hover
+        background-color: $secondary
+    &__guaranty
+      &-img
+        transition: 0.5s
+        &:hover
+          transform: scale(1.2)
+
+@media(max-width: 1200px)
+  .container
+    width: 95%
+    &-hero
+      max-width: 98%
+  .navbar
+    &-top
+      width: 100%
+  .hero
+    &-description
+      max-width: 80%
+  .collection
+    &__gallery
+      width: 50%
+      &-images
+        width: 41%
+    &__text
+      width: 50%
+  .gallery
+  // height: 490px
+    &-1
+      margin: 0
+      width: 41%
+    &-2
+      margin: 0
+      height: 230px
+      width: 100%
+      margin-bottom: 30px
+    &-3
+      margin: 0
+      width: 100%
+      height: 230px
+@media(max-width: 992px)
+  .navbar
+    position: fixed
+    left: 0
+    top: 0
+    right: 0
+    z-index: 99
+    &-top
+      padding: 18px 0 18px 0
+    &__menu
+      display: none
+      &-burger
+        display: block
+      &-mobile
+        display: block
+  .hero
+    margin-top: 96px
+    &__wrapper
+      height: 100%
+    &__text
+      padding-left: 2px
+    &-bage
+      margin-bottom: 25px
+    &__text
+      margin-bottom: 21px
+    &-title
+      font-family: 'HKGrotesk-Bold'
+      font-style: normal
+      font-weight: bold
+      font-size: 48px
+      line-height: 60px
+      letter-spacing: 0.2px
+      margin-bottom: 20px
+    &-description
+      // min-height: 128px
+      max-width: 400px
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 32px
+    &-button
+      margin-bottom: 39px
+      margin-left: 4px
+@media(max-width: 900px)
+  .collection
+    margin-top: -40px
+
+    &-wrapper
+      flex-direction: column
+      justify-content: flex-start
+      align-items: center
+      width: 95%
+      min-height: 861px
+    &__gallery
+      // height: 490px
+      width: 100%
+      margin-bottom: 30px
+      &-images
+        width: 47.7%
+    &__text
+      width: 95%
+      &-description
+        margin-bottom: 24px
+  .gallery
+    &-1
+      width: 47.7%
+    // &-2
+    //   margin: 0
+    //   height: 230px
+    //   width: 100%
+    //   margin-bottom: 30px
+    // &-3
+    //   margin: 0
+    //   width: 100%
+    //   height: 230px
+@media(max-width: 768px)
+  .container
+    width: 84%
+    &-hero
+      width: 95%
+      padding: 34px 293px 0px 28px
+      min-height: 624px
+  .navbar
+    &__mobile
+      top: 10px
+      right: 3.5%
+  .hero
+
+    &-image
+      left: 0px
+      top: -395px
+    &__guaranty
+      max-width: 447px
+  .collection
+    &__gallery
+      height: 490px
+    &-container
+      width: 93%
+      margin: 0 auto
+    &-wrapper
+      width: 100%
+      // height: 860px
+    &__text
+      width: 100%
+      padding-left: 23px
+      padding-right: 55px
+  .gallery
+    &-1
+      height: 100%
+      width: 47.7%
+@media(max-width: 730px)
+  .hero
+    &-title
+      font-size: 32px
+      line-height: 40px
+
+    &-description
+      font-size: 16px
+      line-height: 28px
+    &__guaranty
+      width: 447px
+      justify-content: space-between
+      &-block
+        flex-wrap: nowrap
+        margin-left: 8px
+        margin-right: 8px
+  .collection
+    &__text
+      &-title
+        font-size: 32px
+        line-height: 40px
+        text-align: center
+        margin-bottom: 3px
+@media(max-width: 700px)
+  .gallery
+    &-1
+      width: 47%
+    &-2
+      height: 222px
+    &-3
+      height: 222px
+  .collection
+    &__gallery
+      &-images
+        width: 47%
+@media(max-width: 576px)
+  .container
+    &-hero
+      max-width: 100%
+      padding: 376px 20px 36px 20px
+      min-height: 624px
+      border-radius: 0
+  .navbar
+    &-top
+      padding: 26px 0 16px 0
+  .hero
+    max-height: 899px
+    &__wrapper
+      max-width: 100vw
+
+      flex-direction: column
+      align-items: center
+    &__text
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-bottom: 5px
+    &-bage
+      text-align: center
+      margin-bottom: 19px
+
+    &-description
+      font-size: 16px
+      line-height: 28px
+      text-align: center
+    &-button
+      font-size: 16px
+      line-height: 22px
+      margin-bottom: 20px
+    &__guaranty
+      max-width: 100%
+      justify-content: center
+      flex-wrap: wrap
+    &-image
+      left: -260px
+      top: -376px
+      &::before
+        background: linear-gradient(180deg, rgba(238, 238, 238, 0.0001) 47.32%, #E8EAE9 65.51%)
+  .collection
+    &__text
+      &-title
+        font-style: normal
+        font-weight: bold
+        font-size: 28px
+        line-height: 36px
+        text-align: center
+        letter-spacing: 0.2px
+      &-description
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 28px
+        text-align: center
+      &-see
+        display: none
+    &__gallery
+      flex-direction: column
+      justify-content: flex-start
+      height: 411px
+      &-images
+        flex-direction: row
+        flex-wrap: nowrap
+        height: 97px
+        width: 100%
+        margin-left: 0
+  .gallery
+    &-1
+      width: 100%
+      height: 300px
+      margin-bottom: 14px
+    &-2
+      height: 97px
+      width: 47%
+      margin: 0
+      // overflow: hidden
+    &-3
+      height: 97px
+      width: 47%
+      margin: 0
+@media(max-width: 322px)
+  .collection
+    &__gallery
+      min-height: 411px
+@media(max-width: 320px)
+  .container-hero
+    margin-top: 68px
+  .hero
+    &-title
+      text-align: center
+      margin-bottom: 2px
+    &-description
+      margin-bottom: 17px
+    &__guaranty
+      &-block
+        margin-left: 4px
+        margin-right: 4px
+        margin-bottom: 13px
+      &-img
+        max-height: 24px
+        padding: 5px
+        border: 1px solid rgba(21,101,216, 0.1)
+        border-radius: 12px
+        margin-right: 8px
+    &-image
+      left: -407px
+      top: -381px
+  .navbar
+    &__mobile
+      &--visible
+        min-width: 90%
+      &-menu
+        text-align: center
+      &-button
+        width: 90%
+  .collection
+    margin-top: -56px
+    &__gallery
+      margin-bottom: 26px
+    &__text
+      padding-left: 18px
+      padding-right: 14px
+      &-title
+        width: 254px
+        margin-bottom: 19px
+      &-description
+        width: 100%
