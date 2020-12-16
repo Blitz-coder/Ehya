@@ -21,7 +21,11 @@
         transition: 0.5s
         &:hover
           transform: scale(1.2)
-
+  .subscribe
+    &__button
+      transition: 0.5s
+      &:hover
+        background-color: $secondary
 @media(max-width: 1200px)
   .container
     width: 95%
@@ -54,6 +58,9 @@
       margin: 0
       width: 100%
       height: 230px
+  .subscribe
+    &__form
+      margin-right: 0
 @media(max-width: 992px)
   .navbar
     position: fixed
@@ -97,6 +104,18 @@
     &-button
       margin-bottom: 39px
       margin-left: 4px
+  .subscribe
+    padding: 72px 0 80px 0
+    &-wrapper
+      flex-direction: column
+      align-items: center
+    &__text
+      &-title
+        margin-bottom: 14px
+        text-align: center
+      &-description
+        text-align: center
+        margin-bottom: 56px
 @media(max-width: 900px)
   .collection
     margin-top: -40px
@@ -283,6 +302,47 @@
       height: 97px
       width: 47%
       margin: 0
+  .subscribe
+    padding: 65px 0 64px 0
+    &-container
+      width: 100%
+    &__text
+      width: 100%
+
+      &-title
+        font-style: normal
+        font-weight: bold
+        font-size: 28px
+        line-height: 36px
+        margin-bottom: 24px
+      &-description
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 28px
+        margin-bottom: 36px
+        width: 100%
+    &-form
+      width: 90%
+      text-align: center
+    &__group
+      text-align: center
+    &-icon
+      left: 28px
+      top: 18px
+    &__input
+      width: 97%
+      margin: 0 auto 10px auto
+      padding-right: 25px
+      height: 48px
+    &__button
+      position: relative
+      width: 90%
+      top: 0
+      right: 0
+      padding: 11px 27px 12px 27px
+      width: 97%
+      border-radius: 8px
 @media(max-width: 322px)
   .collection
     &__gallery
@@ -330,3 +390,6 @@
         margin-bottom: 19px
       &-description
         width: 100%
+  .subscribe
+    &-icon
+      left: 24px

@@ -701,6 +701,74 @@ template {
   height: 230px;
   border-radius: 8px; }
 
+.subscribe {
+  position: relative;
+  padding: 100px 0 101px 0;
+  background-image: url(../img/subscribe-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 200px; }
+  .subscribe-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .subscribe__text {
+    color: #fff;
+    max-width: 440px; }
+    .subscribe__text-title {
+      font-family: 'HKGrotesk-Bold';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 60px;
+      letter-spacing: 0.2px;
+      margin: 0 0 14px 0; }
+    .subscribe__text-description {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 32px; }
+  .subscribe__form {
+    margin-right: 62px; }
+  .subscribe-form {
+    position: relative; }
+  .subscribe__input {
+    width: 447px;
+    height: 56px;
+    background: #fff;
+    border: 1px solid #C3CAD9;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 8px;
+    padding-left: 48px;
+    padding-right: 195px; }
+  .subscribe__button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #fff;
+    outline: none;
+    padding: 11px 27px;
+    background: #183B56;
+    border: none;
+    border-radius: 4px; }
+  .subscribe-icon {
+    position: absolute;
+    top: 22px;
+    left: 18px; }
+
 @media (min-width: 992px) {
   .navbar__mobile {
     display: none; }
@@ -720,7 +788,12 @@ template {
     transition: 0.5s; }
     .hero__guaranty-img:hover {
       -webkit-transform: scale(1.2);
-              transform: scale(1.2); } }
+              transform: scale(1.2); }
+  .subscribe__button {
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
+    .subscribe__button:hover {
+      background-color: #1565D8; } }
 
 @media (max-width: 1200px) {
   .container {
@@ -736,7 +809,9 @@ template {
     .collection__gallery-images {
       width: 41%; }
   .collection__text {
-    width: 50%; } }
+    width: 50%; }
+  .subscribe__form {
+    margin-right: 0; } }
 
 @media (max-width: 992px) {
   .navbar {
@@ -779,7 +854,23 @@ template {
       line-height: 32px; }
     .hero-button {
       margin-bottom: 39px;
-      margin-left: 4px; } }
+      margin-left: 4px; }
+  .subscribe {
+    padding: 72px 0 80px 0; }
+    .subscribe-wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .subscribe__text-title {
+      margin-bottom: 14px;
+      text-align: center; }
+    .subscribe__text-description {
+      text-align: center;
+      margin-bottom: 56px; } }
 
 @media (max-width: 900px) {
   .collection {
@@ -972,7 +1063,47 @@ template {
   .gallery-3 {
     height: 97px;
     width: 47%;
-    margin: 0; } }
+    margin: 0; }
+  .subscribe {
+    padding: 65px 0 64px 0; }
+    .subscribe-container {
+      width: 100%; }
+    .subscribe__text {
+      width: 100%; }
+      .subscribe__text-title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 24px; }
+      .subscribe__text-description {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 36px;
+        width: 100%; }
+    .subscribe-form {
+      width: 90%;
+      text-align: center; }
+    .subscribe__group {
+      text-align: center; }
+    .subscribe-icon {
+      left: 28px;
+      top: 18px; }
+    .subscribe__input {
+      width: 97%;
+      margin: 0 auto 10px auto;
+      padding-right: 25px;
+      height: 48px; }
+    .subscribe__button {
+      position: relative;
+      width: 90%;
+      top: 0;
+      right: 0;
+      padding: 11px 27px 12px 27px;
+      width: 97%;
+      border-radius: 8px; } }
 
 @media (max-width: 322px) {
   .collection__gallery {
@@ -1016,5 +1147,7 @@ template {
         width: 254px;
         margin-bottom: 19px; }
       .collection__text-description {
-        width: 100%; } }
+        width: 100%; }
+  .subscribe-icon {
+    left: 24px; } }
 /*# sourceMappingURL=style.css.map */

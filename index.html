@@ -98,16 +98,13 @@
   <section class="collection">
     <div class="container collection-container">
       <div class="collection-wrapper">
-
         <div class="collection__gallery">
           <img src="img/gallery-1.jpg" alt="Зимняя коллекция" class="collection__gallery-img gallery-1">
           <div class="collection__gallery-images">
             <img src="img/gallery-2.jpg" alt="Зимняя коллекция" class="collection__gallery-img gallery-2">
             <img src="img/gallery-3.jpg" alt="Зимняя коллекция" class="collection__gallery-img gallery-3">
           </div>
-
         </div>
-
         <div class="collection__text">
           <h2 lang="en" class="collection__text-title">Новая зимняя коллекция</h2>
           <p class="collection__text-description">Сейчас зимний сезон. Вы можете увидеть больше из этой коллекции, нажав
@@ -123,9 +120,50 @@
       <!-- /.collection-wrapper -->
     </div>
     <!-- /.container -->
+  </section>
+  <!-- /.collection -->
+
+  <section class="trends">
 
   </section>
   <!-- /.trends -->
+
+  <section class="feedback"></section>
+  <!-- /.feedback -->
+
+  <section class="history"></section>
+  <!-- /.history -->
+
+  <section class="subscribe">
+    <div class="container subscribe-container">
+      <div class="subscribe-wrapper">
+        <div class="subscribe__text">
+          <h2 lang="en" class="subscribe__text-title">Подпишитесь</h2>
+          <div class="subscribe__text-description">Напишите свой адрес электронной почты. Мы&nbsp;будем присылать вам
+            новости
+            из
+            мира моды.</div>
+        </div>
+        <!-- /.subscribe__text -->
+        <!-- <div class="subscribe__form"> -->
+        <form action="send.php" method="POST" class="subscribe-form">
+          <div class="subscribe__group">
+            <input type="email" class="subscribe__input" placeholder="Ваш Email" name="email" required>
+
+          </div>
+          <button class="subscribe__button">Подписаться</button>
+          <img src="img/email.svg" alt="icon: email" class="subscribe-icon">
+        </form>
+        <!-- </div> -->
+      </div>
+      <!-- /.subscribe-wrapper -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.subscribe -->
+
+  <footer class="footer"></footer>
+  <!-- /.footer -->
 
   <script src="js/jquery-3.5.1.min.js"></script>
   <script defer src="js/main.js"></script>
