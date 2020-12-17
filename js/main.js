@@ -12,4 +12,20 @@ $(document).ready(function () {
     console.log("клик по бургеру");
   });
 
+  var reviewsSlider = new Swiper('.reviews-slider', {
+    autoplay: {
+      delay: 7000,
+    },
+    loop: true,
+    autoHeight: true,
+
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+  });
+
+
+
 });
