@@ -21,11 +21,27 @@
         transition: 0.5s
         &:hover
           transform: scale(1.2)
+  .collection
+    &__text
+      &-link
+        &:hover
+          text-decoration: underline
   .subscribe
     &__button
       transition: 0.5s
       &:hover
         background-color: $secondary
+  .footer
+    &-link
+      transition: 0.5s
+      &:hover
+        color: $secondary
+        text-decoration: underline
+    &-social
+      &__img
+        transition: 0.5s
+        &:hover
+          transform: scale(1.2)
 @media(max-width: 1200px)
   .container
     width: 95%
@@ -59,7 +75,7 @@
       width: 100%
       height: 230px
   .subscribe
-    &__form
+    &-form
       margin-right: 0
 @media(max-width: 992px)
   .navbar
@@ -116,6 +132,14 @@
       &-description
         text-align: center
         margin-bottom: 56px
+  .footer
+    &-info
+      width: 38%
+    &-widget
+      flex-wrap: wrap
+      &__block
+        width: 50%
+        margin-bottom: 48px
 @media(max-width: 900px)
   .collection
     margin-top: -40px
@@ -139,15 +163,7 @@
   .gallery
     &-1
       width: 47.7%
-    // &-2
-    //   margin: 0
-    //   height: 230px
-    //   width: 100%
-    //   margin-bottom: 30px
-    // &-3
-    //   margin: 0
-    //   width: 100%
-    //   height: 230px
+
 @media(max-width: 768px)
   .container
     width: 84%
@@ -183,6 +199,14 @@
     &-1
       height: 100%
       width: 47.7%
+  .footer
+    &-info
+      width: 50%
+    &-widget
+      &__block
+        margin-left: 25px
+        width: 43%
+        margin-bottom: 25px
 @media(max-width: 730px)
   .hero
     &-title
@@ -206,6 +230,22 @@
         line-height: 40px
         text-align: center
         margin-bottom: 3px
+  .footer
+    padding-top: 64px
+    padding-bottom: 73px
+    &-wrapper
+      flex-direction: column
+    &-info
+      width: 100%
+      order: 2
+      text-align: center
+    &-widget
+      width: 100%
+      order: 1
+      &__block
+        width: 50%
+        margin-left: 0
+
 @media(max-width: 700px)
   .gallery
     &-1
@@ -343,6 +383,39 @@
       padding: 11px 27px 12px 27px
       width: 97%
       border-radius: 8px
+  .footer
+    padding-top: 44px
+    &-logo
+      margin-bottom: 10px
+    &-info
+      padding-top: 35px
+      &__description
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 24px
+        margin-left: 5px
+        margin-bottom: 22px
+    &-wrapper
+      padding-left: 9px
+    &-widget
+      &__block
+        width: 100%
+        margin-bottom: 16px
+    &-title
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 22px
+      margin-bottom: 19px
+    &-link
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+    &-menu
+      &__item
+        margin-bottom: 15px
 @media(max-width: 322px)
   .collection
     &__gallery
