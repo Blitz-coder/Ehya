@@ -1,111 +1,67 @@
-.container-hero
-  position: relative
-  width: 1280px
-  min-height: 700px
-  margin: 0 auto 120px auto
-  position: relative
-  padding: 62px 20px 46px 107px
-  border-radius: 8px
-  overflow: hidden
-  background: #E8EAE9
 .hero
-  margin-bottom: 120px
-  &-image
-    position: absolute
-    width: 1074px
-    height: 1614px
-    left: 27.97%
-    right: -11.88%
-    top: -53.86%
-    bottom: -76.71%
-    &::before
-      content: ''
-      position: absolute
-      right: 0
-      top: 0
-      left: 0
-      bottom: 0
-      background: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%)
-    &__bg
-      width: 100%
-      height: 100%
-      object-fit: cover
-  &__wrapper
-    position: relative
-    z-index: 10
-    max-width: 652px
-    height: 592px
-    display: flex
-    flex-direction: column
-    justify-content: space-start
-  &__text
-    max-height: 400px
-    text-align: left
-    margin-bottom: 52px
-  &-bage
-    display: inline-block
+  padding: 36px 0 120px
+  &-wrapper
+    width: 1280px
+    max-width: 95%
+    min-height: 700px
+    margin: 0 auto 0
+    padding: 62px 107px 46px
+    background: $hero-bg-color url(../img/hero-image-1280.jpeg) right bottom no-repeat
+    border-radius: 8px
+    overflow: hidden
+  &__label
+    width: 175px
     padding: 6px 16px
-    background-color: rgba(54, 179, 126, 0.1)
-    border-radius: 2000px
-    font-style: normal
     font-weight: 600
     font-size: 14px
     line-height: 20px
-    color: $bage-color
-    text-transform: uppercase
-    margin-bottom: 28px
-  &-title
-    max-width: 448px
-    font-family: 'HKGrotesk-Bold'
-    font-weight: bold
-    font-style: normal
+    color: $label-text-color
+    background: rgba(54, 179, 126, 0.1)
+    border-radius: 2000px
+  &__title
+    max-width: 425px
+    margin: 28px 0
+    font-family: 'HKGrotesk-Bold', sans-serif
     font-size: 56px
     line-height: 68px
     letter-spacing: 0.2px
-    color: #183B56
-    margin-bottom: 28px
-    margin-top: 0
-  &-description
+  &__subtitle
     max-width: 652px
-    font-family: Open Sans
-    font-style: normal
-    font-weight: normal
+    margin: 0 0 52px
     font-size: 20px
     line-height: 36px
-    color: inherit
-  &-button
-    width: 259px
-    font-style: normal
-    font-weight: bold
+  &__button
+    max-width: 259px
+    padding: 15px 40px
+    margin-bottom: 49px
+    background-color: $dark-color
+    border: none
+    border-radius: 8px
+    color: #fff
+    font-weight: 700
     font-size: 18px
     line-height: 25px
-    color: $light-color
-    padding: 15px 40px
-    background-color: $primary
-    border-radius: 8px
-    border: none
-    margin-bottom: 48px
-  &__guaranty
+    cursor: pointer
+    opacity: 1
+    &:hover
+      opacity: 0.7
+    &:focus
+      outline: none
+  &-advantages
     display: flex
-    width: 464px
-    max-width: 650px
-    justify-content: space-between
-    margin-bottom: -2px
-    &-block
+    margin: 0
+    padding: 0
+    list-style: none
+    &__item
       display: flex
-      justify-content: space-between
       align-items: center
-    &-img
-      padding: 7px
-      border: 1px solid rgba(21,101,216, 0.1)
-      border-radius: 12px
+      margin-right: 31px
+    &__image
+      width: 36px
       margin-right: 8px
-    &-link
-      font-family: 'HKGrotesk-Medium'
-      font-style: normal
+    &__text
+      font-family: 'HKGrotesk-Medium', sans-serif
       font-weight: 500
       font-size: 16px
       line-height: 20px
       letter-spacing: 0.2px
-      color: #183B56
-      text-decoration: none
