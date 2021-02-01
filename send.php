@@ -5,20 +5,35 @@ require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
+$name = $_POST['name'];
 $email = $_POST['email'];
+$phone = $_POST['phone'];
+
+
 
 
 // Формирование самого письма
-$title = "Новый подписчик для Ehya";
+
+// если указан только email
+if ($email) {
+  $title = "Новый подписчик с Ehya";
+  $body = "
+    <h2>Новый подписчик с Ehya</h2>
+    <b>Email:</b> $email<br>
+  ";
+}
+
+// если указан email и телефон - модальное окно
+if (($email) and ($phone)) {
+$title = "Новый пользователь Ehya";
 $body = "
-<h2>Новый подписчик</h2>
-<b>Email:</b> $email<br>
-
-<p>Отправлено с сайта https://seogalaxy.ru/ehya/</p>
+<h2>Новый пользователь Ehya</h2>
+<b>Имя:</b> $name<br>
+<b>Email</b> $email<br>
+<b>Телефон:</b> $phone<br><br>
+<p>Отправлено из модального окна с сайта<br> https://seogalaxy.ru/ehya/.</p>
 ";
-
-
-
+}
 
 
 // Настройки PHPMailer
